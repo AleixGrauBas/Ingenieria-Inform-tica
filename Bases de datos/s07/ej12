@@ -1,0 +1,6 @@
+SELECT EXTRACT(month FROM fecha) AS mes, codven, COUNT(*) AS facturas
+FROM facturas
+WHERE codven IN(255,355,455) AND EXTRACT(year FROM CURRENT_DATE) - 
+EXTRACT(year FROM fecha) = 1
+GROUP BY mes, codven
+ORDER BY mes, codven

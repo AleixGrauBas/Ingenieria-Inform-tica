@@ -1,0 +1,4 @@
+SELECT codart, descrip, (stock_min - COALESCE(stock,0)) AS resta
+FROM articulos
+WHERE COALESCE(stock, 0) < stock_min
+ORDER BY descrip;

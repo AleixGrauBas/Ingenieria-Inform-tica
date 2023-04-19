@@ -1,0 +1,3 @@
+SELECT codart, MIN(precio) AS mínimo, MAX(precio) AS máximo,
+AVG(dto) AS mediadto
+FROM lineas_fac

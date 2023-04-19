@@ -1,0 +1,4 @@
+SELECT DISTINCT snum
+FROM SP
+WHERE cant > 200;
+

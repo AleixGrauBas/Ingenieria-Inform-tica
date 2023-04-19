@@ -1,0 +1,8 @@
+SELECT codart, descrip
+FROM articulos
+WHERE precio > 90
+EXCEPT
+SELECT a.codart, a.descrip
+FROM articulos AS a JOIN lineas_fac AS l USING(codart)
+GROUP BY a.codart
+HAVING COUNT(l.cant) > 10 

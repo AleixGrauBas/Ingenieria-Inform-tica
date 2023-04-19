@@ -1,0 +1,4 @@
+SELECT codfac, linea, codart, cant, precio, cant*precio AS total, dto, TRUNC((cant*precio) - ((cant*precio)*(dto/100)),2) AS total_con_dto
+FROM lineas_fac
+WHERE COALESCE(dto,0) > 0
+ORDER BY codfac desc, linea;

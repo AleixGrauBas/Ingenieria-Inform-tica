@@ -1,0 +1,3 @@
+SELECT DISTINCT a.codart, a.descrip, f.codcli
+FROM articulos AS a  LEFT JOIN lineas_fac AS l USING(codart) LEFT JOIN facturas AS f USING(codfac)
+ORDER BY a.descrip DESC

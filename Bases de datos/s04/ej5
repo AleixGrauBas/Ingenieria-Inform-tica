@@ -1,0 +1,2 @@
+SELECT DISTINCT(COALESCE(iva,0))
+FROM facturas ;

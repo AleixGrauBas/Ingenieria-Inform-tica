@@ -1,0 +1,6 @@
+SELECT SUBSTRING(nombre,(POSITION(',' in nombre)+2)) || ' ' || SUBSTRING(nombre,0 ,(POSITION(',' in nombre)))AS nombre
+FROM clientes
+WHERE codcli < 50
+ORDER by nombre
+FETCH FIRST 10 ROWS ONLY
+

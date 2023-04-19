@@ -1,0 +1,11 @@
+CREATE TABLE SP(
+	snum VARCHAR(2),
+	pnum VARCHAR(2),
+	cant INTEGER,
+	CONSTRAINT cp_sp PRIMARY KEY ( snum, pnum ),
+	CONSTRAINT ca_sp_s FOREIGN KEY ( snum ) REFERENCES S
+		ON DELETE restrict ON UPDATE CASCADE,
+	CONSTRAINT ca_sp_p FOREIGN KEY ( pnum ) REFERENCES P
+		ON DELETE cascade ON UPDATE CASCADE,
+	CONSTRAINT ri_sp_cant CHECK ( cant > 0 )
+);

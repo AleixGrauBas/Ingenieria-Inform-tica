@@ -1,0 +1,4 @@
+SELECT l.codart, l.codfac
+FROM lineas_fac AS l 
+WHERE l.cant = 1 AND l.precio > 100
+ORDER BY l.codart, l.codfac;

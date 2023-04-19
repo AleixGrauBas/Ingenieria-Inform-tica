@@ -1,0 +1,3 @@
+SELECT codfac
+FROM facturas
+WHERE codcli is NULL ;

@@ -1,0 +1,5 @@
+CREATE TRIGGER trgImporteBruto
+    AFTER INSERT OR DELETE OR UPDATE ON lineas_fac
+    FOR EACH ROW
+    EXECUTE PROCEDURE funImporteBruto();
+

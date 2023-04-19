@@ -1,0 +1,4 @@
+SELECT DISTINCT codart
+FROM lineas_fac
+WHERE codfac BETWEEN 5776 AND 5781 
+ORDER BY codart;
