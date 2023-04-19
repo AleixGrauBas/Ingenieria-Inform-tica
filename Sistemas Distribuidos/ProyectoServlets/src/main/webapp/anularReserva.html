@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BlablaUji</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<body>
+<h1> Formulario de anulación de reserva </h1>
+<div id="divIndice">
+  <form action = "ServletAnulaReserva" method="GET">
+    <table>
+      <tr>
+        <td>
+          <label for="codViaje" >Código del viaje que quieres anular:</label>
+        </td>
+        <td>
+          <input type="text" id="codViaje" name="codViaje" required><br>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <input type = "submit" name = "submit" value = "Enviar"/>
+  </form>
+</div>
+</body>
+</html>

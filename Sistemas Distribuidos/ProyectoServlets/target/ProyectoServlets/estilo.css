@@ -1,0 +1,32 @@
+#tituloIndice{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+}
+#subtituloIndice {
+    text-align: center;
+}
+
+#divIndice {
+    margin-left:30%;
+    margin-right:30%;
+    font-size: small;
+    text-align: center;
+    align-items: center;
+    align: center;
+
+}
+table {
+    text-align: left;
+    margin: 0 auto;
+    align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}

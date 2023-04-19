@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BlablaUji</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<body>
+<h1>Formulario de oferta de nuevo Viaje</h1>
+  <div id="divIndice">
+    <form action="ServletOfertaViaje" method="POST">
+      <table>
+        <tr>
+          <td>Origen:</td>
+          <td>
+            <label for="origen"></label>
+            <input type="text" name="origen" id="origen" maxlength="40" size="40" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Destino:</td>
+          <td>
+            <label for="destino"></label>
+            <input type="text" name="destino" id="destino" maxlength="40" size="40" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Fecha (dd-mm-aa): </td>
+          <td>
+            <label for="fecha"></label>
+            <input type="text" id="fecha" name="fecha" datatype="dd-mm-yyyy" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Precio:</td>
+          <td>
+            <label for="precio"></label>
+            <input type="text" id="precio" name="precio" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Plazas:</td>
+          <td>
+            <label for="numPlazas"> </label>
+            <input type="text" id="numPlazas" name="numPlazas" required>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Oferta viaje">
+    </form>
+  </div>
+</body>
+</html>

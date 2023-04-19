@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <title>BlablaUji</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<body>
+<h1 >Consulta viajes desde un origen</h1>
+<div id="divIndice">
+    <form action = "ServletconsultaViajes" method="GET">
+        <table>
+            <tr>
+                <td>
+                    <label for="origen" >Indica el origen del viaje:</label>
+                </td>
+                <td>
+                    <input type="text" id="origen" name="origen" required><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <h3><a href="menu.jsp">Menú</a></h3>
+</div>
+</body>
+</html>

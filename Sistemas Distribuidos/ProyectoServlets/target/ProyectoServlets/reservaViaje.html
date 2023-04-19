@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BlablaUji</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<body>
+<h1> Formulario de reserva </h1>
+<div id="divIndice">
+  <form action="ServletReservaViaje" method="POST">
+    <table>
+      <tr>
+        <td>
+          <label for="codViaje" >Código del viaje a reservar:</label>
+        </td>
+        <td>
+          <input type="text" id="codViaje" name="codViaje" required><br>
+        </td>
+      </tr>
+    </table>
+    <input type = "submit" name = "submit" value = "Reserva"/>
+  </form>
+  <h3><a href="menu.jsp">Menú</a></h3>
+</div>
+</body>
+</html>
